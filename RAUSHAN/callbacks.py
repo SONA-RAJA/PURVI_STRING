@@ -1,7 +1,7 @@
 import traceback
 from pyrogram import Client, filters
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup
-from RAUSHAN.generate import generate_session, ask_ques, buttons_ques
+from RAUSHAN.generate import generate_session, ask_ques, buttons_ques, sugar, Zask_ques
 
 ERROR_MESSAGE = """ɪғ ʏᴏᴜ ᴀʀᴇ ɢᴇᴛᴛɪɴɢ ᴇʀʀᴏʀ!
 ʏᴏᴜ ʜᴀᴠᴇ ᴅᴏɴᴇ sᴏᴍᴇ ᴍɪsᴛᴀᴋᴇ ᴡʜɪʟᴇ ɢᴇɴᴇʀᴀᴛɪɴɢ.
@@ -14,6 +14,9 @@ ERROR_MESSAGE = """ɪғ ʏᴏᴜ ᴀʀᴇ ɢᴇᴛᴛɪɴɢ ᴇʀʀᴏʀ!
 async def _callbacks(bot: Client, callback_query: CallbackQuery):
     query = callback_query.matches[0].group(1)
     try:
+        if query == "Zgenerate":
+            await callback_query.answer()
+            await callback_query.message.reply(Zask_ques, reply_markup=InlineKeyboardMarkup(sugar))
         if query == "generate":
             await callback_query.answer()
             await callback_query.message.reply(ask_ques, reply_markup=InlineKeyboardMarkup(buttons_ques))
