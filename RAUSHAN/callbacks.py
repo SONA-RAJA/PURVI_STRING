@@ -17,7 +17,7 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
         if query == "Zgenerate":
             await callback_query.answer()
             await callback_query.message.reply(Zask_ques, reply_markup=InlineKeyboardMarkup(sugar))
-        if query == "generate":
+        elif query == "generate":
             await callback_query.answer()
             await callback_query.message.reply(ask_ques, reply_markup=InlineKeyboardMarkup(buttons_ques))
         elif query == "pyrogram":
