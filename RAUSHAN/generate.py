@@ -39,10 +39,8 @@ ask_ques = "**☞︎︎︎ 𝐂ʜᴏᴏsᴇ ᴏɴᴇ ᴛʜᴀᴛ ʏᴏᴜ ᴡᴀ
 Zask_ques = "**☞︎︎︎ 𝐖ʜɪᴄʜ ᴍᴇᴛʜᴏᴅ ᴅᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴜsᴇ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ sᴇssɪᴏɴs ?**\n\n**❍ 𝐍ᴏᴛᴇ :- Aʟᴡᴀʏs Cʜᴏsᴇ Tᴇʟᴇɢʀᴀᴍ Tᴏᴏʟs Mᴇᴛʜᴏᴅ 🍹**\n\n**𖤍 𝐖ᴀʀɴɪɴɢ :- ᴅᴏɴ'ᴛ ᴜsᴇ ʙᴏᴛ ᴍᴇᴛʜᴏᴅ ʙᴇᴄᴀᴜsᴇ ʏᴏᴜʀ ɪᴅ ᴀᴜᴛᴏ ʟᴏɢᴏᴜᴛ 😣**\n\n**𝐑𝛆ɢᴧʀᴅs :- [ᴛᴇᴀᴍ-ᴘᴜʀᴠɪ](t.me/purvi_support)💤**"
 sugar = [
     [
-        InlineKeyboardButton(text="• 𝖦ᴇɴᴇʀᴀᴛᴇ Bʏ Bᴏᴛ •", callback_data="generate")
-    ],
-    [
-        InlineKeyboardButton(text="• 𝖦ᴇɴᴇʀᴀᴛᴇ ʙʏ Tᴏᴏʟs •", url="https://telegram.tools/session-string-generator")
+        InlineKeyboardButton(text="• 𝖦ᴇɴᴇʀᴀᴛᴇ Bʏ Bᴏᴛ •", callback_data="generate"),
+        InlineKeyboardButton(text="• 𝖦ᴇɴᴇʀᴀᴛᴇ ʙʏ Tᴏᴏʟs •", url="https://telegram.tools/session-string-generator"),
     ],
 ]
 
