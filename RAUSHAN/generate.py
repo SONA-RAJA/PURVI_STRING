@@ -42,7 +42,7 @@ sugar = [
         InlineKeyboardButton(text="generate by bot ", callback_data="generate")
     ],
     [
-        InlineKeyboardButton(text="generate by tele tools ", callback_data="generate")
+        InlineKeyboardButton(text="generate by tele tools ", url="https://t.me/linkhere")
     ],
 ]
 
