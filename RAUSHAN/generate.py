@@ -35,6 +35,17 @@ import config
 
 
 ask_ques = "**☞︎︎︎ ᴄʜᴏᴏsᴇ ᴏɴᴇ ᴛʜᴀᴛ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ sᴇssɪᴏɴ 𖤍 ✔️ **"
+
+
+sugar = [
+    [
+        InlineKeyboardButton(text="generate by bot ", callback_data="generate")
+    ],
+    [
+        InlineKeyboardButton(text="generate by tele tools ", callback_data="generate")
+    ],
+]
+
 buttons_ques = [
     [
         InlineKeyboardButton("▪️ᴘʏʀᴏɢʀᴀᴍ▪️", callback_data="pyrogram"),
