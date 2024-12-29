@@ -46,21 +46,21 @@ sugar = [
 
 buttons_ques = [
     [
-        InlineKeyboardButton("▪️ᴘʏʀᴏɢʀᴀᴍ▪️", callback_data="pyrogram"),
-        InlineKeyboardButton("▪️ᴘʏʀᴏɢʀᴀᴍ ᴠ2▪️", callback_data="pyrogram"),
+        InlineKeyboardButton("▪️𝖯ʏʀᴏɢʀᴀᴍ▪️", callback_data="pyrogram"),
+        InlineKeyboardButton("▪️𝖯ʏʀᴏɢʀᴀᴍ ᴠ2▪️", callback_data="pyrogram"),
     ],
     [
-        InlineKeyboardButton("🔺ᴛᴇʟᴇᴛʜᴏɴ🔺", callback_data="telethon"),
+        InlineKeyboardButton("🔺𝖳ᴇʟᴇᴛʜᴏɴ🔺", callback_data="telethon"),
     ],
     [
-        InlineKeyboardButton("🔸ᴘʏʀᴏɢʀᴀᴍ ʙᴏᴛ🔸", callback_data="pyrogram_bot"),
-        InlineKeyboardButton("🔹ᴛᴇʟᴇᴛʜᴏɴ ʙᴏᴛ🔹", callback_data="telethon_bot"),
+        InlineKeyboardButton("🔸𝖯ʏʀᴏɢʀᴀᴍ ʙᴏᴛ🔸", callback_data="pyrogram_bot"),
+        InlineKeyboardButton("🔹𝖳ᴇʟᴇᴛʜᴏɴ ʙᴏᴛ🔹", callback_data="telethon_bot"),
     ],
 ]
 
 gen_button = [
     [
-        InlineKeyboardButton(text="🔹ɢᴇɴʀᴀᴛᴇ sᴇssɪᴏɴ🔹", callback_data="generate")
+        InlineKeyboardButton(text="🔹𝖦ᴇɴʀᴀᴛᴇ sᴇssɪᴏɴ🔹", callback_data="generate")
     ]
 ]
 
