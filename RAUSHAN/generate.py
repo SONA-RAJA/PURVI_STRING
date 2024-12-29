@@ -36,7 +36,7 @@ import config
 
 ask_ques = "**☞︎︎︎ ᴄʜᴏᴏsᴇ ᴏɴᴇ ᴛʜᴀᴛ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ sᴇssɪᴏɴ 𖤍 ✔️ **"
 
-
+Zask_ques = "choose one "
 sugar = [
     [
         InlineKeyboardButton(text="generate by bot ", callback_data="generate")
