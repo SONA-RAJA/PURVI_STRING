@@ -1,7 +1,7 @@
 import traceback
 from pyrogram import Client, filters
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup
-from RAUSHAN.generate import generate_session, ask_ques, buttons_ques, sugar, Zask_ques
+from RAUSHAN.generate import generate_session, ask_ques, buttons_ques, sugar, Zask_ques, alpha_ques
 
 ERROR_MESSAGE = """ɪғ ʏᴏᴜ ᴀʀᴇ ɢᴇᴛᴛɪɴɢ ᴇʀʀᴏʀ!
 ʏᴏᴜ ʜᴀᴠᴇ ᴅᴏɴᴇ sᴏᴍᴇ ᴍɪsᴛᴀᴋᴇ ᴡʜɪʟᴇ ɢᴇɴᴇʀᴀᴛɪɴɢ.
