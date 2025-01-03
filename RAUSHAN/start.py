@@ -58,28 +58,76 @@ async def change_to_gen_msg(bot: Client, query: CallbackQuery):
         reply_markup=InlineKeyboardMarkup(sugarButtons)
     )
 
+
+
+GenByBotTxt = "**☞︎︎︎ 𝐂ʜᴏᴏsᴇ ᴏɴᴇ ᴛʜᴀᴛ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ sᴇssɪᴏɴ ✔️ **"
+
+GenByBotMarkup = [
+    [
+        InlineKeyboardButton("▪️𝖯ʏʀᴏɢʀᴀᴍ▪️", callback_data="pyrogram"),
+        InlineKeyboardButton("▪️𝖯ʏʀᴏɢʀᴀᴍ ᴠ2▪️", callback_data="pyrogram"),
+    ],
+    [
+        InlineKeyboardButton("🔺𝖳ᴇʟᴇᴛʜᴏɴ🔺", callback_data="telethon"),
+    ],
+    [
+        InlineKeyboardButton("🔸𝖯ʏʀᴏɢʀᴀᴍ ʙᴏᴛ🔸", callback_data="pyrogram_bot"),
+        InlineKeyboardButton("🔹𝖳ᴇʟᴇᴛʜᴏɴ ʙᴏᴛ🔹", callback_data="telethon_bot"),
+    ],
+]
+
 @Client.on_callback_query(filters.regex("GenByBot"))
 async def GenByBotS(bot: Client, query: CallbackQuery):
     await query.message.edit_text(
-        text=Sugar,
-        reply_markup=InlineKeyboardMarkup(sugarButtons)
+        text=GenByBotTxt,
+        reply_markup=InlineKeyboardMarkup(GenByBotMarkup)
     )
 
-elif query == "generate":
-            await callback_query.answer()
-            await callback_query.message.reply(ask_ques, reply_markup=InlineKeyboardMarkup(buttons_ques))
-        elif query == "ngenerate":
-            await callback_query.answer()
-            await callback_query.message.reply(ask_ques, reply_markup=InlineKeyboardMarkup(alpha_ques))
-        elif query == "pyrogram":
-            await callback_query.answer()
-            await generate_session(bot, callback_query.message)
-        elif query == "pyrogram_bot":
-            await callback_query.answer("» ᴛʜᴇ sᴇssɪᴏɴ ɢᴇɴᴇʀᴀᴛᴇᴅ ᴡɪʟʟ ʙᴇ ᴏғ ᴩʏʀᴏɢʀᴀᴍ ᴠ2.", show_alert=True)
-            await generate_session(bot, callback_query.message, is_bot=True)
-        elif query == "telethon_bot":
-            await callback_query.answer()
-            await generate_session(bot, callback_query.message, telethon=True, is_bot=True)
-        elif query == "telethon":
-            await callback_query.answer()
-            await generate_session(bot, callback_query.message, telethon=True)
+
+from pyrogram.types import WebAppInfo
+
+
+
+GenByToolsMarkup = InlineKeyboardMarkup(
+    [
+        [
+            InlineKeyboardButton(
+                "🔺𝖳ᴇʟᴇᴛʜᴏɴ🔺",
+                web_app=WebAppInfo(url="http://t.me/KING_STRING_SESSION_BOT/TELETHON")
+            ),
+            InlineKeyboardButton(
+                "🔸𝖯ʏʀᴏɢʀᴀᴍ🔸",
+                web_app=WebAppInfo(url="http://t.me/KING_STRING_SESSION_BOT/PYROGRAM")
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                "🔅 𝖦ᴇɴᴇʀᴀᴛᴇ ᴀʟʟ ᴛʏᴘᴇ sᴇssɪᴏɴ 🔅",
+                web_app=WebAppInfo(url="http://t.me/KING_STRING_SESSION_BOT/STRING_SESSION")
+            ),
+        ],
+    ]
+)
+
+
+@Client.on_callback_query(filters.regex("GenByTools"))
+async def GenByToolsss(bot: Client, query: CallbackQuery):
+    await query.message.edit_text(
+        text=GenByBotTxt,
+        reply_markup=InlineKeyboardMarkup(GenByToolsMarkup)
+    )
+
+
+
+
+
+
+gen_button = [
+    [
+        InlineKeyboardButton(text="🔹𝖦ᴇɴʀᴀᴛᴇ sᴇssɪᴏɴ🔹", callback_data="Zgenerate")
+    ]
+]
+
+
+
+
