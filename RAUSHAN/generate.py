@@ -36,16 +36,6 @@ import config
 
 ask_ques = "**☞︎︎︎ 𝐂ʜᴏᴏsᴇ ᴏɴᴇ ᴛʜᴀᴛ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ sᴇssɪᴏɴ ✔️ **"
 
-Zask_ques = "**☞︎︎︎ 𝐖ʜɪᴄʜ ᴍᴇᴛʜᴏᴅ ᴅᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴜsᴇ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ sᴇssɪᴏɴs ?**\n\n**<u>❍ 𝐍ᴏᴛᴇ</u> :- Aʟᴡᴀʏs Cʜʜᴏsᴇ Tᴇʟᴇɢʀᴀᴍ Tᴏᴏʟs Mᴇᴛʜᴏᴅ 🍹**\n\n**<u>𖤍 𝐖ᴀʀɴɪɴɢ</u> :- ᴅᴏɴ'ᴛ ᴜsᴇ ʙᴏᴛ ᴍᴇᴛʜᴏᴅ ʙᴇᴄᴀᴜsᴇ ʏᴏᴜʀ ɪᴅ ᴀᴜᴛᴏ ʟᴏɢᴏᴜᴛ 😣**"
-sugar = [
-    [
-        InlineKeyboardButton(text="♽ 𝖦ᴇɴᴇʀᴀᴛᴇ ʙʏ ʙᴏᴛ", callback_data="generate"),
-        InlineKeyboardButton(text="♽ 𝖦ᴇɴᴇʀᴀᴛᴇ ʙʏ ᴛᴏᴏʟs", callback_data="ngenerate"),
-    ],
-    [
-        InlineKeyboardButton("♽ 𝖡ᴀᴄᴋ ♽", callback_data="back"),
-    ],
-]
 
 
 alpha_ques = [
