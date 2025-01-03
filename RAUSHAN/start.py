@@ -51,34 +51,37 @@ sugarButtons = [
 ]
 
 
+
 @Client.on_callback_query(filters.regex("back2home"))
 async def change_to_gen_msg(bot: Client, query: CallbackQuery):
     me2 = (await bot.get_me()).mention
+    
+    
+    text = (
+        f"✦ » ʜᴇʏ {query.from_user.mention},\n"
+        f"✦ » ɪ ᴀᴍ {me2},\n\n"
+        f"✦ » Aɴ ᴏᴘᴇɴ sᴏᴜʀᴄᴇ sᴛʀɪɴɢ sᴇssɪᴏɴ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴛ, "
+        f"ᴡʀɪᴛᴛᴇɴ ɪɴ ᴩʏᴛʜᴏɴ ᴡɪᴛʜ ᴛʜᴇ ʜᴇʟᴩ ᴏғ ᴩʏʀᴏɢʀᴀᴍ.\n\n"
+        f"✦ » ᴘʟᴇᴀꜱᴇ ᴄʜᴏᴏꜱᴇ ᴛʜᴇ ᴘʏᴛʜᴏɴ ʟɪʙʀᴀʀʏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ ꜱᴛʀɪɴɢ ꜱᴇꜱꜱɪᴏɴ ꜰᴏʀ.\n\n"
+        f"✦ » ɪғ ʏᴏᴜ ɴᴇᴇᴅ ᴀɴʏ ʜᴇʟᴘ, ᴛʜᴇɴ ᴅᴍ ᴛᴏ ᴍʏ ᴏᴡɴᴇʀ: "
+        f"[⎯᪵ ꯭♡゙꯭ 𝗔꯭ ℓ ꯭ᴘ ꯭፝֠֩᷍ʜ ꯭ᴧ ꯭🥂꯭](tg://user?id={OWNER_ID})!"
+    )
+    
+    reply_markup = InlineKeyboardMarkup([
+        [InlineKeyboardButton(text="▪ 𝖦ᴇɴᴇʀᴀᴛᴇ sᴛʀɪɴɢ ▪️", callback_data="changeToGenMsg")],
+        [
+            InlineKeyboardButton("🔸 𝛅ᴜᴘᴘᴏʀᴛ🔸", url="https://t.me/PURVI_SUPPORT"),
+            InlineKeyboardButton("▫️ 𝖴ᴘᴅᴀᴛᴇs▫️", url="https://t.me/PURVI_UPDATES")
+        ],
+        [
+            InlineKeyboardButton("🔸 𝛅ᴏᴜʀᴄᴇ 🔸", url="https://github.com/TEAMPURVI/PURVI_STRING"),
+            InlineKeyboardButton("▫️ϻᴜsɪᴄ ʙᴏᴛ▫️", url="https://t.me/PURVI_MUSIC_BOT")
+        ]
+    ])
+    
     await query.message.edit_text(
-        text=f"""✦ » ʜᴇʏ  {query.from_user.mention}  ✤,
-✦ » ɪ ᴀᴍ {me2},
-
-✦ » Aɴ ᴏᴘᴇɴ sᴏᴜʀᴄᴇ sᴛʀɪɴɢ sᴇssɪᴏɴ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴛ, ᴡʀɪᴛᴛᴇɴ ɪɴ ᴩʏᴛʜᴏɴ ᴡɪᴛʜ ᴛʜᴇ ʜᴇʟᴩ ᴏғ ᴩʏʀᴏɢʀᴀᴍ.
-
-✦ » ᴘʟᴇᴀꜱᴇ ᴄʜᴏᴏꜱᴇ ᴛʜᴇ ᴘʏᴛʜᴏɴ ʟɪʙʀᴀʀʏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ ꜱᴛʀɪɴɢ ꜱᴇꜱꜱɪᴏɴ ꜰᴏʀ.
-
-✦ » ɪғ ʏᴏᴜ ɴᴇᴇᴅ ᴀɴʏ ʜᴇʟᴘ, ᴛʜᴇɴ ᴅᴍ ᴛᴏ ᴍʏ ᴏᴡɴᴇʀ: [⎯᪵ ꯭♡゙꯭ 𝗔꯭ ℓ ꯭ᴘ ꯭፝֠֩᷍ʜ ꯭ᴧ ꯭🥂꯭](tg://user?id={OWNER_ID}) !""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(text="▪ 𝖦ᴇɴᴇʀᴀᴛᴇ sᴛʀɪɴɢ ▪️", callback_data="changeToGenMsg")
-                ],
-                [
-                    InlineKeyboardButton("🔸 𝛅ᴜᴘᴘᴏʀᴛ🔸", url="https://t.me/PURVI_SUPPORT"),
-                    InlineKeyboardButton("▫️ 𝖴ᴘᴅᴀᴛᴇs▫️", url="https://t.me/PURVI_UPDATES")
-                ],
-                [
-                    InlineKeyboardButton("🔸 𝛅ᴏᴜʀᴄᴇ 🔸", url="https://github.com/TEAMPURVI/PURVI_STRING"),
-                    InlineKeyboardButton("▫️ϻᴜsɪᴄ ʙᴏᴛ▫️", url="https://t.me/PURVI_MUSIC_BOT")
-                ]                
-            ]
-        ),
-      #  reply_markup=InlineKeyboardMarkup(reply_markup)
+        text=text,
+        reply_markup=reply_markup
     )
     
 @Client.on_callback_query(filters.regex("changeToGenMsg"))
@@ -123,17 +126,17 @@ GenByToolsMarkup = InlineKeyboardMarkup(
         [
             InlineKeyboardButton(
                 "🔺𝖳ᴇʟᴇᴛʜᴏɴ🔺",
-                web_app=WebAppInfo(url="http://t.me/KING_STRING_SESSION_BOT/TELETHON")
+                url="http://t.me/KING_STRING_SESSION_BOT/TELETHON"
             ),
             InlineKeyboardButton(
                 "🔸𝖯ʏʀᴏɢʀᴀᴍ🔸",
-                web_app=WebAppInfo(url="http://t.me/KING_STRING_SESSION_BOT/PYROGRAM")
+                url="http://t.me/KING_STRING_SESSION_BOT/PYROGRAM"
             ),
         ],
         [
             InlineKeyboardButton(
                 "🔅 𝖦ᴇɴᴇʀᴀᴛᴇ ᴀʟʟ ᴛʏᴘᴇ sᴇssɪᴏɴ 🔅",
-                web_app=WebAppInfo(url="http://t.me/KING_STRING_SESSION_BOT/STRING_SESSION")
+                url="http://t.me/KING_STRING_SESSION_BOT/STRING_SESSION"
             ),
         ],
     ]
