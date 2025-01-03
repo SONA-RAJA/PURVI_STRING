@@ -53,7 +53,7 @@ sugarButtons = [
 
 
 @Client.on_callback_query(filters.regex("back2home"))
-async def change_to_gen_msg(bot: Client, query: CallbackQuery):
+async def back2homeeee(bot: Client, query: CallbackQuery):
     me2 = (await bot.get_me()).mention
     
     
