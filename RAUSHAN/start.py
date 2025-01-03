@@ -39,13 +39,22 @@ async def start(bot: Client, msg: Message):
     )
 
 
-from RAUSHAN.generate import sugar, Zask_ques
+Sugar = "**☞︎︎︎ 𝐖ʜɪᴄʜ ᴍᴇᴛʜᴏᴅ ᴅᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴜsᴇ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ sᴇssɪᴏɴs ?**\n\n**<u>❍ 𝐍ᴏᴛᴇ</u> :- Aʟᴡᴀʏs Cʜʜᴏsᴇ Tᴇʟᴇɢʀᴀᴍ Tᴏᴏʟs Mᴇᴛʜᴏᴅ 🍹**\n\n**<u>𖤍 𝐖ᴀʀɴɪɴɢ</u> :- ᴅᴏɴ'ᴛ ᴜsᴇ ʙᴏᴛ ᴍᴇᴛʜᴏᴅ ʙᴇᴄᴀᴜsᴇ ʏᴏᴜʀ ɪᴅ ᴀᴜᴛᴏ ʟᴏɢᴏᴜᴛ 😣**"
+sugarButtons = [
+    [
+        InlineKeyboardButton(text="♽ 𝖦ᴇɴᴇʀᴀᴛᴇ ʙʏ ʙᴏᴛ", callback_data="GenByBot"),
+        InlineKeyboardButton(text="♽ 𝖦ᴇɴᴇʀᴀᴛᴇ ʙʏ ᴛᴏᴏʟs", callback_data="GenByTools"),
+    ],
+    [
+        InlineKeyboardButton("♽ 𝖡ᴀᴄᴋ ♽", callback_data="back"),
+    ],
+]
 
 
 @Client.on_callback_query(filters.regex("changeToGenMsg"))
 async def change_to_gen_msg(bot: Client, query: CallbackQuery):
     await query.message.edit_text(
-        text=zask_ques,
-        reply_markup=InlineKeyboardMarkup(sugar)
+        text=Sugar,
+        reply_markup=InlineKeyboardMarkup(sugarButtons)
     )
 
