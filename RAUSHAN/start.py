@@ -144,7 +144,7 @@ GenByToolsMarkup = InlineKeyboardMarkup(
 async def GenByToolsss(bot: Client, query: CallbackQuery):
     await query.message.edit_text(
         text=GenByBotTxt,
-        reply_markup=InlineKeyboardMarkup(GenByToolsMarkup)
+        reply_markup=GenByToolsMarkup,
     )
 
 
