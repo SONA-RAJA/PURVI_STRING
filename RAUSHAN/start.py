@@ -58,3 +58,28 @@ async def change_to_gen_msg(bot: Client, query: CallbackQuery):
         reply_markup=InlineKeyboardMarkup(sugarButtons)
     )
 
+@Client.on_callback_query(filters.regex("GenByBot"))
+async def GenByBotS(bot: Client, query: CallbackQuery):
+    await query.message.edit_text(
+        text=Sugar,
+        reply_markup=InlineKeyboardMarkup(sugarButtons)
+    )
+
+elif query == "generate":
+            await callback_query.answer()
+            await callback_query.message.reply(ask_ques, reply_markup=InlineKeyboardMarkup(buttons_ques))
+        elif query == "ngenerate":
+            await callback_query.answer()
+            await callback_query.message.reply(ask_ques, reply_markup=InlineKeyboardMarkup(alpha_ques))
+        elif query == "pyrogram":
+            await callback_query.answer()
+            await generate_session(bot, callback_query.message)
+        elif query == "pyrogram_bot":
+            await callback_query.answer("» ᴛʜᴇ sᴇssɪᴏɴ ɢᴇɴᴇʀᴀᴛᴇᴅ ᴡɪʟʟ ʙᴇ ᴏғ ᴩʏʀᴏɢʀᴀᴍ ᴠ2.", show_alert=True)
+            await generate_session(bot, callback_query.message, is_bot=True)
+        elif query == "telethon_bot":
+            await callback_query.answer()
+            await generate_session(bot, callback_query.message, telethon=True, is_bot=True)
+        elif query == "telethon":
+            await callback_query.answer()
+            await generate_session(bot, callback_query.message, telethon=True)
