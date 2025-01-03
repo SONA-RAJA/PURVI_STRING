@@ -43,7 +43,7 @@ gen_button = [
 ]
 
 
-genTxt = "click below button to gen session "
+genTxt = "**☞︎︎︎ ᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ sᴛᴀʀᴛ ɢᴇɴ sᴇssɪᴏɴ.**"
 
 
 @Client.on_message(filters.private & ~filters.forwarded & filters.command(["generate", "gen", "string", "str"]))
