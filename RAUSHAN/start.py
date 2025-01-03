@@ -126,21 +126,25 @@ GenByToolsMarkup = InlineKeyboardMarkup(
         [
             InlineKeyboardButton(
                 "🔺𝖳ᴇʟᴇᴛʜᴏɴ🔺",
-                url="http://t.me/KING_STRING_SESSION_BOT/TELETHON"
+                web_app=WebAppInfo(url="https://t.me/KING_STRING_SESSION_BOT/TELETHON")
             ),
             InlineKeyboardButton(
                 "🔸𝖯ʏʀᴏɢʀᴀᴍ🔸",
-                url="http://t.me/KING_STRING_SESSION_BOT/PYROGRAM"
+                web_app=WebAppInfo(url="https://t.me/KING_STRING_SESSION_BOT/PYROGRAM")
             ),
         ],
         [
             InlineKeyboardButton(
                 "🔅 𝖦ᴇɴᴇʀᴀᴛᴇ ᴀʟʟ ᴛʏᴘᴇ sᴇssɪᴏɴ 🔅",
-                url="http://t.me/KING_STRING_SESSION_BOT/STRING_SESSION"
+                web_app=WebAppInfo(url="https://t.me/KING_STRING_SESSION_BOT/STRING_SESSION")
             ),
         ],
     ]
 )
+
+
+
+
 
 
 @Client.on_callback_query(filters.regex("GenByTools"))
