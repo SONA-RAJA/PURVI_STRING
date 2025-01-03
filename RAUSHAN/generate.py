@@ -34,40 +34,6 @@ import config
 
 
 
-ask_ques = "**☞︎︎︎ 𝐂ʜᴏᴏsᴇ ᴏɴᴇ ᴛʜᴀᴛ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ sᴇssɪᴏɴ ✔️ **"
-
-
-
-alpha_ques = [
-    [
-        InlineKeyboardButton("🔺𝖳ᴇʟᴇᴛʜᴏɴ🔺", url="http://t.me/KING_STRING_SESSION_BOT/TELETHON"),
-        InlineKeyboardButton("🔸𝖯ʏʀᴏɢʀᴀᴍ🔸", url="http://t.me/KING_STRING_SESSION_BOT/PYROGRAM"),
-    ],
-    [
-        InlineKeyboardButton("🔅 𝖦ᴇɴᴇʀᴀᴛᴇ ᴀʟʟ ᴛʏᴘᴇ sᴇssɪᴏɴ 🔅 ", url="http://t.me/KING_STRING_SESSION_BOT/STRING_SESSION"),
-    ],
-]
-
-
-buttons_ques = [
-    [
-        InlineKeyboardButton("▪️𝖯ʏʀᴏɢʀᴀᴍ▪️", callback_data="pyrogram"),
-        InlineKeyboardButton("▪️𝖯ʏʀᴏɢʀᴀᴍ ᴠ2▪️", callback_data="pyrogram"),
-    ],
-    [
-        InlineKeyboardButton("🔺𝖳ᴇʟᴇᴛʜᴏɴ🔺", callback_data="telethon"),
-    ],
-    [
-        InlineKeyboardButton("🔸𝖯ʏʀᴏɢʀᴀᴍ ʙᴏᴛ🔸", callback_data="pyrogram_bot"),
-        InlineKeyboardButton("🔹𝖳ᴇʟᴇᴛʜᴏɴ ʙᴏᴛ🔹", callback_data="telethon_bot"),
-    ],
-]
-
-gen_button = [
-    [
-        InlineKeyboardButton(text="🔹𝖦ᴇɴʀᴀᴛᴇ sᴇssɪᴏɴ🔹", callback_data="Zgenerate")
-    ]
-]
 
 
 
