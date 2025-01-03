@@ -36,11 +36,19 @@ import config
 
 
 
+gen_button = [
+    [
+        InlineKeyboardButton(text="🔹𝖦ᴇɴʀᴀᴛᴇ sᴇssɪᴏɴ🔹", callback_data="Zgenerate")
+    ]
+]
+
+
+
 
 
 @Client.on_message(filters.private & ~filters.forwarded & filters.command(["generate", "gen", "string", "str"]))
 async def main(_, msg):
-    await msg.reply(ask_ques, reply_markup=InlineKeyboardMarkup(sugar))
+    await msg.reply(ask_ques, reply_markup=InlineKeyboardMarkup(gen_button))
 
 
 async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: bool = False, is_bot: bool = False):
