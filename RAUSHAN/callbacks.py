@@ -20,6 +20,9 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
         elif query == "generate":
             await callback_query.answer()
             await callback_query.message.reply(ask_ques, reply_markup=InlineKeyboardMarkup(buttons_ques))
+        elif query == "ngenerate":
+            await callback_query.answer()
+            await callback_query.message.reply(ask_ques, reply_markup=InlineKeyboardMarkup(alpha_ques))
         elif query == "pyrogram":
             await callback_query.answer()
             await generate_session(bot, callback_query.message)
