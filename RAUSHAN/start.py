@@ -77,8 +77,8 @@ async def change_to_gen_msg(bot: Client, query: CallbackQuery):
                     InlineKeyboardButton("▫️ϻᴜsɪᴄ ʙᴏᴛ▫️", url="https://t.me/PURVI_MUSIC_BOT")
                 ]                
             ]
-        )
-        reply_markup=InlineKeyboardMarkup(reply_markup)
+        ),
+      #  reply_markup=InlineKeyboardMarkup(reply_markup)
     )
     
 @Client.on_callback_query(filters.regex("changeToGenMsg"))
