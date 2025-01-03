@@ -44,6 +44,18 @@ sugar = [
     ],
 ]
 
+
+alpha_ques = [
+    [
+        InlineKeyboardButton("🔺𝖳ᴇʟᴇᴛʜᴏɴ🔺", url="http://t.me/KING_STRING_SESSION_BOT/TELETHON"),
+        InlineKeyboardButton("🔸𝖯ʏʀᴏɢʀᴀᴍ🔸", url="http://t.me/KING_STRING_SESSION_BOT/PYROGRAM"),
+    ],
+    [
+        InlineKeyboardButton("🔅 𝖦ᴇɴᴇʀᴀᴛᴇ ᴀʟʟ ᴛʏᴘᴇ sᴇssɪᴏɴ 🔅 ", url="http://t.me/KING_STRING_SESSION_BOT/STRING_SESSION"),
+    ],
+]
+
+
 buttons_ques = [
     [
         InlineKeyboardButton("▪️𝖯ʏʀᴏɢʀᴀᴍ▪️", callback_data="pyrogram"),
