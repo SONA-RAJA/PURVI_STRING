@@ -38,7 +38,7 @@ import config
 
 gen_button = [
     [
-        InlineKeyboardButton(text="🔹𝖦ᴇɴʀᴀᴛᴇ sᴇssɪᴏɴ🔹", callback_data="Zgenerate")
+        InlineKeyboardButton(text="🔹𝖦ᴇɴʀᴀᴛᴇ sᴇssɪᴏɴ🔹", callback_data="changeToGenMsg")
     ]
 ]
 
