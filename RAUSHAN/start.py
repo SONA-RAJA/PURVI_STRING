@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message, CallbackQuery
 
 from config import OWNER_ID
 
@@ -24,7 +24,7 @@ async def start(bot: Client, msg: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(text="▪ 𝖦ᴇɴᴇʀᴀᴛᴇ sᴛʀɪɴɢ ▪️", callback_data="Zgenerate")
+                    InlineKeyboardButton(text="▪ 𝖦ᴇɴᴇʀᴀᴛᴇ sᴛʀɪɴɢ ▪️", callback_data="changeToGenMsg")
                 ],
                 [
                     InlineKeyboardButton("🔸 𝛅ᴜᴘᴘᴏʀᴛ🔸", url="https://t.me/PURVI_SUPPORT"),
@@ -37,3 +37,15 @@ async def start(bot: Client, msg: Message):
             ]
         )
     )
+
+
+from RAUSHAN.generate import sugar, Zask_ques
+
+
+@Client.on_callback_query(filters.regex("changeToGenMsg"))
+async def change_to_gen_msg(bot: Client, query: CallbackQuery):
+    await query.message.edit_text(
+        text=zask_ques,
+        reply_markup=InlineKeyboardMarkup(sugar)
+    )
+
