@@ -126,17 +126,17 @@ GenByToolsMarkup = InlineKeyboardMarkup(
         [
             InlineKeyboardButton(
                 "🔺𝖳ᴇʟᴇᴛʜᴏɴ🔺",
-                web_app=WebAppInfo(url="https://t.me/KING_STRING_SESSION_BOT/TELETHON")
+                url="https://t.me/KING_STRING_SESSION_BOT/TELETHON"
             ),
             InlineKeyboardButton(
                 "🔸𝖯ʏʀᴏɢʀᴀᴍ🔸",
-                web_app=WebAppInfo(url="https://t.me/KING_STRING_SESSION_BOT/PYROGRAM")
+                url="https://t.me/KING_STRING_SESSION_BOT/PYROGRAM"
             ),
         ],
         [
             InlineKeyboardButton(
                 "🔅 𝖦ᴇɴᴇʀᴀᴛᴇ ᴀʟʟ ᴛʏᴘᴇ sᴇssɪᴏɴ 🔅",
-                web_app=WebAppInfo(url="https://t.me/KING_STRING_SESSION_BOT/STRING_SESSION")
+                url="https://t.me/KING_STRING_SESSION_BOT/STRING_SESSION"
             ),
         ],
     ]
