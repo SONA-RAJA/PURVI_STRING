@@ -143,13 +143,28 @@ GenByToolsMarkup = InlineKeyboardMarkup(
 
 
 
-
+from pyrogram.enums import ParseMode
 
 @Client.on_callback_query(filters.regex("GenByTools"))
-async def GenByToolsss(bot: Client, query: CallbackQuery):
+async def GenByTooglsss(bot: Client, query: CallbackQuery):
     await query.message.edit_text(
-        text=GenByBotTxt,
-        reply_markup=GenByToolsMarkup,
+        text="<pre>Hᴇʀᴇ ɪs ᴛʜᴇ ᴡᴇʙ ᴍᴇᴛʜᴏᴅ.</pre>\nPʟᴇᴀsᴇ ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴘʏᴛʜᴏɴ ʟɪʙʀᴀʀʏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ sᴛʀɪɴɢ sᴇssɪᴏɴ ғᴏʀ",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "˹ ᴛᴇʟᴇᴛʜᴏɴ ˼",
+                        web_app=WebAppInfo(url="https://telegram.tools/session-string-generator#telethon,bot")
+                    ),
+                    InlineKeyboardButton(
+                        "˹ ᴘʏʀᴏɢʀᴀᴍ ˼",
+                        web_app=WebAppInfo(url="https://telegram.tools/session-string-generator#pyrogram,user")
+                    ),
+                ],
+                [InlineKeyboardButton("🔙 Bᴀᴄᴋ", callback_data="changeToGenMsg")]
+            ]
+        ),
+        parse_mode=ParseMode.HTML
     )
 
 
